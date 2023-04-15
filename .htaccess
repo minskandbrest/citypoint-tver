@@ -1,0 +1,7 @@
+ErrorDocument 404 http://citypoint-tver.ru/err404.html
+RewriteCond %{REQUEST_URI} /index.html
+RewriteCond %{QUERY_STRING} ^\z
+RewriteRule ^(.*)$ https://citypoint-tver.ru/? [R=301,L]
+
+
+
